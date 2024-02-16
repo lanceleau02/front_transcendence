@@ -5,6 +5,7 @@ const app  = express();
 
 app.use("/js", express.static(path.resolve(__dirname, "frontend", "js")));
 app.use("/css", express.static(path.resolve(__dirname, "frontend", "css")));
+app.use("/img", express.static(path.resolve(__dirname, "frontend", "img")));
 
 app.get("/batpong", (req, res) => {
 	res.sendFile(path.resolve("frontend", "views", "batpong.html"));

@@ -22,12 +22,25 @@ body {
 	padding-right: 35px;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+	text-decoration: underline;
+	text-underline-position: under;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+}
+
+.nav-link.dropdown-toggle {
+	text-decoration: none;
+}
+
 .dropdown-menu {
 	background-color: #FFFF00;
 }
 
 .dropdown-menu> li> a:hover {
 	background-color: #aaaa00;
+	text-decoration: none;
 }
 
 .centered-container {
